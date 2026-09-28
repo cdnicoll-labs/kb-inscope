@@ -7,7 +7,7 @@ description: Write or update an InScope assessment in the InScope knowledge base
 
 An assessment document is the contract for one scoring assessment: what goes in, what comes out, and the logic that is a product decision. It describes what InScope should do, not how today's code happens to do it. Anything true only of the current implementation goes under Known gaps.
 
-Save to `kb-inscope` only. If `whoami` reports another client, stop and say so.
+Save to `kb-inscope` only. If `whoami` reports another client, stop and say so. Apply `inscope-rules` to the draft.
 
 ## Interview
 

@@ -2,7 +2,7 @@
   "name": "inscope",
   "displayName": "Knowledge base: InScope",
   "description": "InScope's knowledge base skills. Carries no connection: add kb-inscope as a connector, or through a client hub's .mcp.json.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Cody Nicoll"
   }

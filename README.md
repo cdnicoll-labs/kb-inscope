@@ -7,7 +7,8 @@ and never sees another client's entries.
 ```
 .claude-plugin/plugin.json       the inscope plugin manifest
 .claude-plugin/marketplace.json  this plugin at ./. The core skills come from the kb-skills marketplace
-skills/                          InScope-specific skills
+skills/inscope-rules/             what must never be saved for InScope, and the document kinds
+skills/inscope-assessment/        one scoring assessment, written as a contract
 ```
 
 There is no connection here on purpose. The server is added separately, so the skills never carry a way in.
@@ -23,8 +24,13 @@ In the Claude apps:
 2. Add the knowledge base as a custom connector, using the server's `/mcp` URL.
 3. Sign in with your email when asked.
 
-In Claude Code, from a InScope client hub: the hub's `.claude/settings.json` enables this plugin and its
+In Claude Code, from an InScope client hub: the hub's `.claude/settings.json` enables this plugin and its
 `.mcp.json` points at the server. The first session asks you to sign in.
+
+## What goes in
+
+Kinds: `assessment`, `decision`, `concept`, `system`, `overview`. Never client data, health information, commercial
+terms, or vendors and code in product documents. The rules and the kind table are in `skills/inscope-rules/`.
 
 ## Changing a skill
 

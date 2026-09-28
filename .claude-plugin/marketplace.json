@@ -9,7 +9,7 @@
       "name": "inscope",
       "source": "./",
       "description": "Skills specific to InScope. Install with kb-core, then add the kb-inscope connector.",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }
